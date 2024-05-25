@@ -1,0 +1,264 @@
+/* heebo font family */
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;500;600;700;800;900&display=swap");
+
+/* variables */
+:root {
+  --primary: #ff6464;
+  --secondary: #00a8cc;
+  --dark: #21243d;
+  --light: #8695a4;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
+}
+a {
+  color: #00a8cc;
+
+  text-decoration: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+ul,
+li {
+  list-style: none;
+}
+.wrapper {
+  max-width: 885px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+header nav {
+  padding: 27px 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+header nav ul {
+  display: flex;
+  justify-content: end;
+  gap: 33px;
+}
+header nav ul li a {
+  font-family: Heebo;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: right;
+  color: #000000;
+}
+
+header .head-content {
+  display: flex;
+  gap: 106px;
+  padding: 140px 0 71px 0;
+}
+header .head-content .head-left h1 {
+  color: var(--dark);
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+  max-width: 445px;
+  margin-bottom: 40px;
+}
+header .head-content .head-left p {
+  color: var(--dark);
+  margin-bottom: 38px;
+}
+header .head-content .head-left button {
+  border-radius: 2px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 17px 20.5px;
+  transition: 0.5s;
+}
+
+header .head-content .head-left button:hover {
+  color: #ff6464;
+  background-color: #edf7fa;
+  border: #ff6464;
+  border: #ff6464 solid 1px;
+  border-radius: 2px;
+}
+
+.post {
+  background: #edf7fa;
+  padding: 7px 0 32px 0;
+}
+.post .tittle {
+  padding-top: 7px;
+  padding-bottom: 9px;
+  display: flex;
+  justify-content: space-between;
+}
+.post.tittle span {
+  color: var(--dark);
+  font-size: 22px;
+  line-height: 60px;
+}
+.post.tittle a {
+  color: var(--secondary);
+  font-size: 16px;
+}
+.post .content {
+  display: flex;
+  gap: 20px;
+}
+.post .item {
+  background-color: white;
+  padding: 24px 22px 37px 22px;
+}
+.post .item h3 {
+  color: var(--dark);
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+.post .item .date {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 11px;
+}
+
+.post .item .date div:nth-child(2) {
+  width: 1px;
+  height: 20px;
+  background-color: black;
+}
+.post .item p {
+  color: var(--dark);
+}
+
+.features {
+  padding: 15px 0 83px 0;
+}
+.features .title {
+  color: var(--dark);
+  font-size: 22px;
+  line-height: 60px;
+}
+.features .main {
+  display: flex;
+  gap: 18px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 15px;
+  padding-top: 31px;
+}
+.features .main .content h2 {
+  color: var(--dark);
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.features .main .content-date {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  margin-top: 20px;
+}
+.features .main .content-date span:first-child {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+
+  padding: 0 10px;
+  background-color: var(--dark);
+  border-radius: 16px;
+}
+.features .main .content p {
+  margin-top: 22px;
+  color: var(--dark);
+}
+.features .main .content-date span:last-child {
+  color: #8695a4;
+  font-size: 20px;
+  font-weight: 400;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 51px;
+  padding-bottom: 54px;
+}
+footer .socials ul {
+  display: flex;
+  gap: 35px;
+  margin-bottom: 26px;
+}
+
+footer .socials ul li a i {
+  font-size: 30px;
+  color: var(--dark);
+}
+footer .socials small {
+  color: var(--dark);
+  font-size: 14px;
+}
+/* mobile */
+@media only screen and (max-width: 576px) {
+  /* header */
+  header nav {
+    padding: 20px 18px 12px 0;
+    display: flex;
+    justify-content: end;
+  }
+  header nav .toggle-menu {
+    display: block;
+    background-color: transparent;
+    font-size: 20px;
+  }
+  header nav ul {
+    display: none;
+  }
+
+  header .head-content {
+    flex-wrap: wrap-reverse;
+    gap: 43px;
+    padding: 33px 0 60px 0;
+    justify-content: center;
+    text-align: center;
+  }
+  header .head-content .head-left h1 {
+    margin: auto;
+    font-size: 32px;
+    line-height: 40px;
+    max-width: 312px;
+    padding: 0 auto;
+    margin-bottom: 21px;
+  }
+  header .head-content .head-left p {
+    color: var(--dark);
+    margin-bottom: 38px;
+  }
+  header .head-content .head-left button {
+    padding: 13px 20.5px;
+  }
+  /* post */
+  .post .content {
+    flex-wrap: wrap;
+  }
+  /* footeer */
+  .features .title {
+    text-align: center;
+    font-size: 18px;
+  }
+  .features .main {
+    flex-direction: column;
+  }
+  .features .main .content h2 {
+    font-size: 24px;
+  }
+  .features .main .content-date {
+    gap: 22px;
+  }
+
+  span:last-child {
+    font-size: 16px;
+  }
+}
