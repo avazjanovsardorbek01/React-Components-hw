@@ -7,11 +7,11 @@ const About = () => {
       <nav>
         <ul>
           <li>
-            <a href="./pages/work.html">Works</a>
+            <a href="#">Works</a>
           </li>
 
           <li>
-            <a href="./pages/blog.html">Blog</a>
+            <a href="/blog">Blog</a>
           </li>
 
           <li>

@@ -1,12 +1,15 @@
+import { Routes, Route } from "react-router-dom";
+import Blog from "./components/blog/Blog";
 import About from "./components/about/About";
 import Feature from "./components/feature/Feature";
 import Resent from "./components/resent/Resent";
 function App() {
   return (
     <>
-      <About />
-      <Resent />
-      <Feature />
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
       <footer>
         <div class="socials">
           <ul>
